@@ -47,7 +47,7 @@
     },
     "autoload": {
         "psr-4": {
-            "datlv\\User\\": "src/"
+            "Datlv\\User\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -55,13 +55,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "datlv\\User\\Tests\\": "tests/"
+            "Datlv\\User\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "datlv\\User\\ServiceProvider"
+                "Datlv\\User\\ServiceProvider"
             ]
         }
     }
