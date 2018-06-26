@@ -94,7 +94,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @return \Illuminate\Database\Query\Builder|\Datlv\User\User
      */
-    public function scopeForSelectize($query, $ignore = null, $take = 50)
+    public function scopeForSelectize($query, $ignore = null, $take = 500)
     {
         return $query->withGroup()->except($ignore)
             ->where("{$this->table}.username", '<>', 'admin')
